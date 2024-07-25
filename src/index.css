@@ -11,3 +11,217 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins";
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+  gap: 6px;
+  background: radial-gradient(circle, #d6efec, #ebe4ee);
+}
+
+.title-box{
+  margin-top: 25px;
+  margin-bottom: 16px; 
+  width: 40%;
+  border: 4px solid rgb(72, 120, 241);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background: radial-gradient(circle, #5ccae2, #c170e6);
+
+}
+
+.title{
+  font-size: 35px;
+  font-weight: 700;
+  color: #373B3D;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  padding: 10px;
+  width: 380px;
+  height: max-content;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 3px 8px rgba(0,0,0,24);
+  background: radial-gradient(circle, #cadef6 50%, #f5dee6 100%);
+}
+
+.card:hover{
+  box-shadow: 0px 5px 10px rgba(0,0,0,32);
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.9;
+  transition: filter 0.3s ease-in-out;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,16));
+  transition: background 0.3s ease-in-out;
+  background: radial-gradient(circle, #f5dee6 50%, #cadef6 100%);
+}
+
+.image{
+  width: 360px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.tour-info{
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.tour-details{
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.tour-price{
+  color: #18D116;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tour-name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description{
+  align-items: start;
+  text-wrap: wrap;
+}
+
+.read-more{
+  color: rgb(28, 69, 216);
+  cursor: pointer;
+}
+
+.read-more:hover{
+  font-size: 17px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tour-rejection-btn{
+  padding: 4px;
+  border: 1px solid #F97777;
+  box-shadow: 0px 2px 4px  gray;
+  border-radius: 5px;
+  background: #F9D4D4;
+  height: max-content;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.tour-rejection-btn:hover{
+  background: #F9A0A0;
+  transition: background 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  color: white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,16);
+  transition: filter 0.3s ease-in-out;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,16));
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.9;
+  transition: filter 0.3s ease-in-out;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,16));
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
+  transition: filter 0.3s ease-in-out;
+}
+
+.refresh{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tours-empty-heading{
+  font-size: 40px;
+  font-weight: 700;
+  color: #373B3D;
+}
+
+.refresh-btn{
+  padding: 10px 20px;
+  border: 1px solid #373B3D;
+  border-radius: 5px;
+  background: #373B3D;
+  color: white;
+  cursor: pointer;
+}
+
+.refresh-btn:hover{
+  background: #6A6A6A;
+  transition: background 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0,0,0,16);
+  transition: filter 0.3s ease-in-out;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,16));
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.9;
+  transition: background 0.3s ease-in-out;
+  background: #6A6A6A;
+}
